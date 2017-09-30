@@ -9,6 +9,13 @@
 	/* oculto al menu de mobile */
 }
 
+.nav button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	/* saco estilos predeterminados del boton */
+}
+
 .nav-mobile{
 	position: absolute;
 	right: 30px;

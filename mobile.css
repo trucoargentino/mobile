@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.nav{
+	position: relative;
+	display: none;
+	/* oculto al menu de mobile */
+}
+
+.nav-mobile{
+	position: absolute;
+	right: 30px;
+	width: 400px;
+	display: none;
+	list-style-type: none;
+	background-color: purple;
+	
+}
+
+.nav-mobile a{
+	display: block;
+	padding: 20px;
+	background-color: #060;
+	border-bottom: 1px dashed blue;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav-mobile a:hover{
+	background-color: orange;
+	
+}
+
+.toggle{
+	display: block;
+	
+}
+
+/* menu escritorio */
+
+.nav-desktop{
+	max-width: 1000px;
+	background-color: violet;
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-desktop li {
+	flex-grow: 1;
+	
+}
+
+.nav-desktop a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.nav-desktop a:hover{
+	color: black;
+}
+
+@media (max-width: 767px) {
+	
+	.nav{
+		display: block;
+		
+	}
+	.nav-desktop{
+	display: none;	
+	}
+	
+}

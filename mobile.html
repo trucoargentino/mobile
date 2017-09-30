@@ -6,13 +6,43 @@
 			<title>Sitio Mobile</title>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		
-		
-	
+			<link href="mobile.css" rel="stylesheet">
 	</head>
 	<body>
-	 <h1>Sitio para celulares</h1>
+	
+	<ul class="nav-desktop">
+		<li><a href="#">Botón 1 </a></li>
+		<li><a href="#">Botón 2 </a></li>
+		<li><a href="#">Botón 3 </a></li>
+	
+	</ul>
+	 
+	 <div class="nav">
+	 
+	 <button id="boton">Toggle</button>
+	 <!-- interruptor -->
+	 
+	 <ul class="nav-mobile" id="menu">
+		<li><a href="#">Botón 1 </a></li>
+		<li><a href="#">Botón 2 </a></li>
+		<li><a href="#">Botón 3 </a></li>
 
+	</div>
+	<h1>Sitio para celulares</h1>
+	
+	 <script>
+	 //comentario//
+	 
+	 boton.addEventListener(
+	 "click",
+	 function (){
+	 <!-- alert("Hiciste click!"); -->
+	 menu.classList.toggle("toggle");
+	 //se fija las clases de menu//
+	 }
+	 );
+	 </script>
+	
 	</body>
 
 </html>
